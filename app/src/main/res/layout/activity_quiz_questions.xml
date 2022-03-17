@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".QuizQuestionsActivity"
+                android:layout_gravity="center"
+                android:layout_margin="16dp">
+            <TextView
+                    android:id="@+id/tvTopText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.01"
+                    android:gravity="center"
+                    android:text="@string/what_country_does_this_flag_belong_to"
+                    android:textSize="28sp"/>
+            <ImageView
+                    android:id="@+id/ivQuestionImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTopText"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_flag_of_argentina"/>
+            <ProgressBar
+                    android:id="@+id/pbQuizProgress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivQuestionImage"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="60dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:indeterminate="false"
+                    android:max="10"
+                    android:minHeight="50dp"
+                    android:progress="0"/>
+
+            <TextView
+                    android:id="@+id/tvProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/pbQuizProgress"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/pbQuizProgress"
+                    app:layout_constraintBottom_toBottomOf="@id/pbQuizProgress"
+                    android:padding="15dp"
+                    android:text="0/10"
+                    android:textSize="14sp"/>
+            <TextView
+                    android:id="@+id/tvOptionOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProgress"
+                    style="@style/questionTextViews"
+                    android:text="Option One"/>
+            <TextView
+                    android:id="@+id/tvOptionTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvOptionOne"
+                    style="@style/questionTextViews"
+                    android:text="Option Two"/>
+            <TextView
+                    android:id="@+id/tvOptionThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvOptionTwo"
+                    style="@style/questionTextViews"
+                    android:text="Option Three"/>
+            <TextView
+                    android:id="@+id/tvOptionFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvOptionThree"
+                    style="@style/questionTextViews"
+                    android:text="Option Four"/>
+            <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvOptionFour"
+                    android:layout_margin="16dp"
+                    android:padding="16dp"
+                    android:text="Submit"
+                    android:textStyle="bold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

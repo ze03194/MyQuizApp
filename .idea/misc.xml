@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/idk/Desktop/MyQuizApp/app/src/main/res/drawable/edit_text_border.xml" value="0.22763157894736843" />
+        <entry key="..\:/Users/idk/Desktop/MyQuizApp/app/src/main/res/drawable/selected_text_border.xml" value="0.22697368421052633" />
+        <entry key="..\:/Users/idk/Desktop/MyQuizApp/app/src/main/res/drawable/text_view_border.xml" value="0.23026315789473684" />
+        <entry key="..\:/Users/idk/Desktop/MyQuizApp/app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="..\:/Users/idk/Desktop/MyQuizApp/app/src/main/res/layout/activity_quiz_questions.xml" value="0.12" />
+        <entry key="..\:/Users/idk/Desktop/MyQuizApp/app/src/main/res/layout/activity_result.xml" value="0.15" />
+        <entry key="..\:/Users/idk/Desktop/MyQuizApp/app/src/main/res/layout/activity_wrong_answers.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
